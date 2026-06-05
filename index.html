@@ -6,56 +6,55 @@
     <title>Ant Juan Xriztofer C. Buca | Portfolio</title>
     <style>
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #ffffff;           
+            background: #ffffff;
             color: #333;
             line-height: 1.6;
         }
         header {
-            background: linear-gradient(135deg, #6B46C1, #7C3AED); 
+            background: linear-gradient(135deg, #6B46C1, #7C3AED);
             color: white;
             text-align: center;
-            padding: 90px 20px;
+            padding: 100px 20px 80px;
         }
-        h1 { 
-            font-size: 2.8em; 
-            margin: 0; 
+        h1 {
+            font-size: 3em;
+            margin: 0 0 10px 0;
         }
-        .subtitle { 
-            font-size: 1.35em; 
-            margin: 12px 0; 
+        .subtitle {
+            font-size: 1.4em;
+            margin: 8px 0;
             opacity: 0.95;
         }
-        section { 
-            padding: 60px 10%; 
-            max-width: 1000px; 
-            margin: 0 auto; 
+        section {
+            padding: 50px 10%;
+            max-width: 900px;
+            margin: 0 auto;
         }
-        h2 { 
-            color: #6B46C1;            
-            border-bottom: 4px solid #6B46C1;
-            padding-bottom: 12px;
+        h2 {
+            color: #6B46C1;
+            border-bottom: 3px solid #6B46C1;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .content-box {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
             margin-bottom: 25px;
         }
-        .project, .certificate, .hobby {
-            background: #ffffff;
-            padding: 28px;
-            border-radius: 12px;
-            margin: 20px 0;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            border-left: 5px solid #F97316;  
+        strong {
+            color: #F97316;
         }
-        strong, h3 {
-            color: #F97316;               
-        }
-        footer { 
-            text-align: center; 
-            padding: 40px; 
-            background: #4C1D95;       
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #4C1D95;
             color: white;
-            margin-top: 50px;
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -67,20 +66,24 @@
         <p class="subtitle">Aspiring Information System Developer</p>
     </header>
 
-    <section id="about">
+    <section>
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I'm an IS student with a strong passion for programming, particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.</p>
-        <p>This website showcases my skills, projects, and achievements as I continue to grow in the field of software development.</p>
+        <div class="content-box">
+            <p>Welcome to my portfolio! I'm an IS student with a strong passion for programming, particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.</p>
+            <p>This website showcases my skills, projects, and achievements as I continue to grow in the field of software development.</p>
+        </div>
     </section>
 
     <section>
         <h2>My Skill</h2>
-        <p><strong>Java</strong></p>
+        <div class="content-box">
+            <p><strong>Java</strong></p>
+        </div>
     </section>
 
     <section>
         <h2>Featured Project</h2>
-        <div class="project">
+        <div class="content-box">
             <h3>Traffic Violation Management System for Carmen</h3>
             <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
             <p><strong>Role:</strong> Co - Developer</p>
@@ -91,7 +94,7 @@
 
     <section>
         <h2>My Certificate</h2>
-        <div class="certificate">
+        <div class="content-box">
             <h3>ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
             <p>BYTEFEST 3.0 • 2026</p>
         </div>
@@ -99,11 +102,11 @@
 
     <section>
         <h2>Hobbies</h2>
-        <div class="hobby">
+        <div class="content-box">
             <h3>🎮 Playing Online Games</h3>
             <p>Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
         </div>
-        <div class="hobby">
+        <div class="content-box">
             <h3>🎥 Watching Movies & Series</h3>
             <p>I love watching action, romance, thriller, and other interesting films.</p>
         </div>
