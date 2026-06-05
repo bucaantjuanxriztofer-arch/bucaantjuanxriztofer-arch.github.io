@@ -6,55 +6,94 @@
     <title>Ant Juan Xriztofer C. Buca | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Arial, sans-serif;
             margin: 0;
             padding: 0;
             background: #ffffff;
             color: #333;
-            line-height: 1.6;
+            line-height: 1.7;
         }
         header {
-            background: linear-gradient(135deg, #6B46C1, #7C3AED);
+            background: linear-gradient(135deg, #6B46C1, #A855F7, #EC4899);
             color: white;
             text-align: center;
-            padding: 100px 20px 80px;
+            padding: 120px 20px 90px;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+            animation: pulse 15s infinite;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
         }
         h1 {
-            font-size: 3em;
-            margin: 0 0 10px 0;
+            font-size: 3.2em;
+            margin: 0 0 15px 0;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.3);
         }
         .subtitle {
-            font-size: 1.4em;
-            margin: 8px 0;
+            font-size: 1.45em;
+            margin: 10px 0;
             opacity: 0.95;
         }
         section {
-            padding: 50px 10%;
-            max-width: 900px;
+            padding: 70px 10%;
+            max-width: 950px;
             margin: 0 auto;
         }
         h2 {
             color: #6B46C1;
-            border-bottom: 3px solid #6B46C1;
-            padding-bottom: 10px;
-            margin-bottom: 30px;
+            font-size: 2.2em;
+            border-bottom: 4px solid #F97316;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: #EC4899;
         }
         .content-box {
             background: white;
-            padding: 25px;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-            margin-bottom: 25px;
+            padding: 32px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(107, 70, 193, 0.15);
+            margin-bottom: 30px;
+            transition: all 0.4s ease;
+            border: 1px solid #E0D4FF;
         }
-        strong {
+        .content-box:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(107, 70, 193, 0.25);
+        }
+        strong, h3 {
             color: #F97316;
+        }
+        .icon {
+            font-size: 2.2em;
+            margin-right: 12px;
         }
         footer {
             text-align: center;
-            padding: 40px;
-            background: #4C1D95;
+            padding: 50px;
+            background: linear-gradient(135deg, #4C1D95, #6B46C1);
             color: white;
-            margin-top: 40px;
+            margin-top: 60px;
         }
     </style>
 </head>
@@ -77,14 +116,14 @@
     <section>
         <h2>My Skill</h2>
         <div class="content-box">
-            <p><strong>Java</strong></p>
+            <p><span class="icon">☕</span><strong>Java</strong></p>
         </div>
     </section>
 
     <section>
         <h2>Featured Project</h2>
         <div class="content-box">
-            <h3>Traffic Violation Management System for Carmen</h3>
+            <h3>🚦 Traffic Violation Management System for Carmen</h3>
             <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
             <p><strong>Role:</strong> Co - Developer</p>
             <p><strong>Technology:</strong> Java</p>
@@ -95,7 +134,7 @@
     <section>
         <h2>My Certificate</h2>
         <div class="content-box">
-            <h3>ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
+            <h3>🏆 ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
             <p>BYTEFEST 3.0 • 2026</p>
         </div>
     </section>
