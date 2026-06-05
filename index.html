@@ -8,8 +8,8 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: #f8fafc;
-            color: #2d3748;
+            background: #1a1423;
+            color: #e2d9f0;
             line-height: 1.7;
         }
 
@@ -18,88 +18,77 @@
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(91, 33, 182, 0.95);
+            background: rgba(26, 20, 35, 0.95);
             backdrop-filter: blur(10px);
             z-index: 1000;
-            padding: 15px 0;
+            border-bottom: 1px solid #6b46c1;
         }
         .nav-container {
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
+            padding: 18px 20px;
             display: flex;
-            justify-content: center;
-            gap: 35px;
+            justify-content: space-between;
+            align-items: center;
         }
-        .nav-link {
-            color: white;
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #c4b5fd;
+        }
+        .nav-links a {
+            color: #d1c4e9;
             text-decoration: none;
-            font-weight: 600;
-            padding: 10px 18px;
-            border-radius: 30px;
+            margin-left: 35px;
+            font-weight: 500;
             transition: 0.3s;
         }
-        .nav-link:hover {
-            background: rgba(255,255,255,0.25);
+        .nav-links a:hover {
+            color: #a855f7;
         }
 
         /* Hero */
         header {
-            background: linear-gradient(135deg, #5b21b6, #a855f7);
-            color: white;
+            background: linear-gradient(135deg, #2e1a47, #4c1d95);
             text-align: center;
-            padding: 180px 20px 120px;
-            margin-top: 60px;
+            padding: 200px 20px 140px;
+            margin-top: 65px;
         }
         h1 {
-            font-size: 3.5em;
+            font-size: 3.4em;
             margin-bottom: 15px;
+            color: #e0d4ff;
         }
         .subtitle {
-            font-size: 1.5em;
-            opacity: 0.95;
+            font-size: 1.45em;
+            color: #c4b5fd;
         }
 
         section {
-            padding: 90px 10%;
+            padding: 100px 10%;
             max-width: 1000px;
             margin: 0 auto;
         }
         h2 {
-            font-size: 2.4em;
-            color: #5b21b6;
+            font-size: 2.5em;
+            color: #c4b5fd;
             margin-bottom: 40px;
             text-align: center;
-            position: relative;
-        }
-        h2::after {
-            content: '';
-            width: 80px;
-            height: 4px;
-            background: #f97316;
-            position: absolute;
-            bottom: -12px;
-            left: 50%;
-            transform: translateX(-50%);
         }
 
         .card {
-            background: white;
-            padding: 35px;
+            background: rgba(46, 26, 71, 0.6);
+            border: 1px solid #6b46c1;
+            padding: 40px;
             border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(91, 33, 182, 0.12);
-            margin-bottom: 30px;
-            transition: 0.4s;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 25px 50px rgba(91, 33, 182, 0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
         }
 
         footer {
             text-align: center;
             padding: 60px;
-            background: #2d1b4e;
-            color: white;
+            background: #120c1f;
+            color: #a5a5c0;
         }
     </style>
 </head>
@@ -107,12 +96,15 @@
 
     <nav>
         <div class="nav-container">
-            <a href="#home" class="nav-link">Home</a>
-            <a href="#about" class="nav-link">About</a>
-            <a href="#skills" class="nav-link">Skills</a>
-            <a href="#project" class="nav-link">Project</a>
-            <a href="#certificate" class="nav-link">Certificate</a>
-            <a href="#hobbies" class="nav-link">Hobbies</a>
+            <div class="logo">Ant Buca</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About Me</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#certificate">Certificate</a>
+                <a href="#hobbies">Hobbies</a>
+            </div>
         </div>
     </nav>
 
@@ -125,7 +117,8 @@
     <section id="about">
         <h2>About Me</h2>
         <div class="card">
-            <p>Welcome to my portfolio! I'm an IS student with a strong passion for programming, particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.</p>
+            <p>Welcome to my personal website! I'm excited to share a little bit about myself, my journey, and the work I'm passionate about.</p>
+            <p style="margin-top:20px;">As an Information Systems student, I have a strong passion for programming especially in Java. I enjoy solving real-world problems through technology and continuously improving my skills.</p>
         </div>
     </section>
 
@@ -140,7 +133,7 @@
         <h2>Featured Project</h2>
         <div class="card">
             <h3>Traffic Violation Management System for Carmen</h3>
-            <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
+            <p>A Java-GUI based system designed to manage traffic violations efficiently.</p>
             <p><strong>Role:</strong> Co - Developer</p>
             <p><strong>Technology:</strong> Java</p>
             <p><strong>Year:</strong> 2026</p>
@@ -159,11 +152,11 @@
         <h2>Hobbies</h2>
         <div class="card">
             <h3>🎮 Playing Online Games</h3>
-            <p>Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
+            <p>Especially <strong>Mobile Legends</strong></p>
         </div>
         <div class="card">
             <h3>🎥 Watching Movies & Series</h3>
-            <p>I love watching action, romance, thriller, and other interesting films.</p>
+            <p>I love watching action, romance, and thriller films.</p>
         </div>
     </section>
 
