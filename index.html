@@ -9,68 +9,95 @@
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
             background: #f8fafc;
-            color: #333;
+            color: #2d3748;
             line-height: 1.7;
         }
-        /* Top Navigation */
+
+        /* Navigation */
         nav {
             position: fixed;
             top: 0;
-            left: 0;
             width: 100%;
-            background: rgba(107, 70, 193, 0.95);
-            padding: 15px 0;
+            background: rgba(91, 33, 182, 0.95);
+            backdrop-filter: blur(10px);
             z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 15px 0;
         }
         .nav-container {
             max-width: 1000px;
             margin: 0 auto;
             display: flex;
             justify-content: center;
-            gap: 40px;
+            gap: 35px;
         }
         .nav-link {
             color: white;
             text-decoration: none;
             font-weight: 600;
-            padding: 8px 16px;
-            border-radius: 8px;
-            transition: all 0.3s;
+            padding: 10px 18px;
+            border-radius: 30px;
+            transition: 0.3s;
         }
         .nav-link:hover {
-            background: rgba(255,255,255,0.2);
-            transform: translateY(-2px);
+            background: rgba(255,255,255,0.25);
         }
 
+        /* Hero */
         header {
-            background: linear-gradient(135deg, #6B46C1, #A855F7);
+            background: linear-gradient(135deg, #5b21b6, #a855f7);
             color: white;
             text-align: center;
-            padding: 160px 20px 100px;
+            padding: 180px 20px 120px;
             margin-top: 60px;
         }
-        h1 { font-size: 3em; margin-bottom: 10px; }
-        .subtitle { font-size: 1.4em; margin: 10px 0; }
-
-        section { padding: 80px 10%; max-width: 950px; margin: 0 auto; }
-        h2 {
-            color: #6B46C1;
-            font-size: 2.3em;
-            margin-bottom: 30px;
-            border-bottom: 4px solid #F97316;
-            padding-bottom: 12px;
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 15px;
         }
+        .subtitle {
+            font-size: 1.5em;
+            opacity: 0.95;
+        }
+
+        section {
+            padding: 90px 10%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 2.4em;
+            color: #5b21b6;
+            margin-bottom: 40px;
+            text-align: center;
+            position: relative;
+        }
+        h2::after {
+            content: '';
+            width: 80px;
+            height: 4px;
+            background: #f97316;
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         .card {
             background: white;
-            padding: 30px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(107, 70, 193, 0.15);
-            margin-bottom: 25px;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(91, 33, 182, 0.12);
+            margin-bottom: 30px;
+            transition: 0.4s;
         }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(91, 33, 182, 0.2);
+        }
+
         footer {
             text-align: center;
-            padding: 50px;
+            padding: 60px;
             background: #2d1b4e;
             color: white;
         }
@@ -78,7 +105,6 @@
 </head>
 <body>
 
-    <!-- Top Navigation Menu -->
     <nav>
         <div class="nav-container">
             <a href="#home" class="nav-link">Home</a>
@@ -99,7 +125,7 @@
     <section id="about">
         <h2>About Me</h2>
         <div class="card">
-            <p>Welcome to my portfolio! I'm an IS student with a strong passion for programming, particularly in Java...</p>
+            <p>Welcome to my portfolio! I'm an IS student with a strong passion for programming, particularly in Java. I enjoy learning new technologies and applying them to solve real-world problems.</p>
         </div>
     </section>
 
@@ -133,11 +159,11 @@
         <h2>Hobbies</h2>
         <div class="card">
             <h3>🎮 Playing Online Games</h3>
-            <p>Especially <strong>Mobile Legends</strong></p>
+            <p>Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
         </div>
         <div class="card">
             <h3>🎥 Watching Movies & Series</h3>
-            <p>I love watching action, romance, thriller...</p>
+            <p>I love watching action, romance, thriller, and other interesting films.</p>
         </div>
     </section>
 
