@@ -41,8 +41,12 @@
             text-decoration: none;
             margin-left: 40px;
             font-weight: 500;
+            transition: all 0.3s;
         }
-        .nav-links a:hover { color: #f97316; }
+        .nav-links a:hover { 
+            color: #f97316; 
+            transform: translateY(-3px);
+        }
 
         /* Hero */
         header {
@@ -90,6 +94,12 @@
             padding: 45px;
             border-radius: 20px;
             box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            transition: all 0.4s ease;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            box-shadow: 0 25px 50px rgba(249, 115, 22, 0.3);
+            border-color: #f97316;
         }
 
         footer {
