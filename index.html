@@ -10,10 +10,9 @@
             font-family: 'Segoe UI', Arial, sans-serif;
             background: #0f172a;
             color: #e2e8f0;
-            line-height: 1.8;
+            line-height: 1.7;
         }
         
-        /* Navigation */
         nav {
             position: fixed;
             top: 0;
@@ -26,63 +25,59 @@
         .nav-container {
             max-width: 1100px;
             margin: 0 auto;
-            padding: 20px 30px;
+            padding: 16px 25px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .logo {
-            font-size: 1.85em;
+            font-size: 1.65em;
             font-weight: bold;
             color: #6366f1;
         }
         .nav-links a {
             color: #cbd5e1;
             text-decoration: none;
-            margin-left: 40px;
+            margin-left: 30px;
+            font-size: 1em;
             font-weight: 500;
-            transition: all 0.3s;
         }
-        .nav-links a:hover {
-            color: #a5b4fc;
-        }
+        .nav-links a:hover { color: #a5b4fc; }
 
-        /* Hero */
         header {
             background: linear-gradient(135deg, #1e2937, #312e81);
             text-align: center;
-            padding: 220px 20px 160px;
-            margin-top: 70px;
+            padding: 180px 20px 140px;
+            margin-top: 65px;
         }
         h1 {
-            font-size: 3.6em;
-            margin-bottom: 15px;
+            font-size: 3em;
+            margin-bottom: 10px;
             color: #e0e7ff;
         }
         .subtitle {
-            font-size: 1.5em;
+            font-size: 1.25em;
             color: #94a3b8;
         }
 
         section {
-            padding: 120px 10%;
+            padding: 90px 8%;
             max-width: 1000px;
             margin: 0 auto;
         }
         h2 {
-            font-size: 2.6em;
+            font-size: 2.3em;
             color: #c4c4ff;
             text-align: center;
-            margin-bottom: 50px;
-            position: relative;
+            margin-bottom: 35px;
         }
         h2::after {
             content: '';
-            width: 80px;
+            width: 70px;
             height: 4px;
             background: #6366f1;
             position: absolute;
-            bottom: -15px;
+            bottom: -12px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -90,29 +85,31 @@
         .card {
             background: #1e2937;
             border: 1px solid #6366f1;
-            padding: 45px;
-            border-radius: 20px;
-            box-shadow: 0 15px 35px rgba(99, 102, 241, 0.15);
+            padding: 32px;
+            border-radius: 16px;
             transition: all 0.4s ease;
         }
         .card:hover {
-            transform: translateY(-10px);
+            transform: translateY(-6px);
             border-color: #818cf8;
+        }
+
+        /* Project Image Style */
+        .project-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 12px;
+            border: 3px solid #6366f1;
+            flex-shrink: 0;
         }
 
         footer {
             text-align: center;
-            padding: 80px 20px 60px;
+            padding: 50px 20px;
             background: #0f172a;
             color: #94a3b8;
-            font-size: 1.05em;
-        }
-        footer a {
-            color: #818cf8;
-            text-decoration: none;
-        }
-        footer a:hover {
-            color: #c4c4ff;
+            font-size: 1em;
         }
     </style>
 </head>
@@ -139,37 +136,38 @@
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="card" style="display: flex; align-items: center; gap: 40px; flex-wrap: wrap;">
-            <img src="BUCA, ANT JUAN DSC_0247.JPG" 
-                 alt="Ant Juan Xriztofer C. Buca" 
-                 class="profile-img">
+        <div class="card" style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
+            <img src="BUCA, ANT JUAN DSC_0247.JPG" alt="Ant Juan Xriztofer C. Buca" class="profile-img">
             <div style="flex: 1;">
                 <p>Welcome to my personal website! I'm excited to share a little bit about myself, my journey, and the work I'm passionate about.</p>
-                <p style="margin-top:25px;">As an Information Systems student, I have a strong passion for programming especially in Java. I enjoy solving real-world problems through technology.</p>
+                <p style="margin-top:20px;">As an Information Systems student, I have a strong passion for programming especially in Java. I enjoy solving real-world problems through technology.</p>
             </div>
         </div>
     </section>
 
     <section id="skills">
         <h2>My Skill</h2>
-        <div class="card" style="display: flex; align-items: center; gap: 30px;">
-            <img src="download (2).png" 
-                 alt="Java Logo" 
-                 class="skill-img">
+        <div class="card" style="display: flex; align-items: center; gap: 20px;">
+            <img src="download (2).png" alt="Java Logo" class="skill-img">
             <div>
-                <p style="font-size: 1.5em;"><strong>Java</strong></p>
+                <p style="font-size: 1.35em;"><strong>Java</strong></p>
             </div>
         </div>
     </section>
 
     <section id="project">
         <h2>Featured Project</h2>
-        <div class="card">
-            <h3>Traffic Violation Management System for Carmen</h3>
-            <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
-            <p><strong>Role:</strong> Co - Developer</p>
-            <p><strong>Technology:</strong> Java</p>
-            <p><strong>Year:</strong> 2026</p>
+        <div class="card" style="display: flex; align-items: center; gap: 25px; flex-wrap: wrap;">
+            <img src="d2ae47de-51ac-476d-af64-64aeac47a68e.jpg" 
+                 alt="Traffic Violation System" 
+                 class="project-img">
+            <div style="flex: 1;">
+                <h3>Traffic Violation Management System for Carmen</h3>
+                <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
+                <p><strong>Role:</strong> Co - Developer</p>
+                <p><strong>Technology:</strong> Java</p>
+                <p><strong>Year:</strong> 2026</p>
+            </div>
         </div>
     </section>
 
@@ -183,7 +181,7 @@
 
     <section id="hobbies">
         <h2>Hobbies</h2>
-        <div class="card" style="display: flex; align-items: center; gap: 25px; margin-bottom: 25px;">
+        <div class="card" style="display: flex; align-items: center; gap: 20px; margin-bottom: 20px;">
             <img src="images (3).jpg" alt="Gaming" class="hobby-img">
             <div>
                 <h3>🎮 Playing Online Games</h3>
@@ -191,7 +189,7 @@
             </div>
         </div>
         
-        <div class="card" style="display: flex; align-items: center; gap: 25px;">
+        <div class="card" style="display: flex; align-items: center; gap: 20px;">
             <img src="download (4).png" alt="Movies" class="hobby-img">
             <div>
                 <h3>🎥 Watching Movies & Series</h3>
@@ -202,7 +200,7 @@
 
     <footer>
         © 2026 Ant Juan Xriztofer C. Buca • Built with ❤️ on GitHub Pages<br><br>
-        📧 <a href="mailto:buca.antjuanxriztofer@dnsc.edu.ph">buca.antjuanxriztofer@dnsc.edu.ph</a>
+        📧 <a href="mailto:buca.antjuanxriztofer@dnsc.edu.ph" style="color:#818cf8;">buca.antjuanxriztofer@dnsc.edu.ph</a>
     </footer>
 </body>
 </html>
