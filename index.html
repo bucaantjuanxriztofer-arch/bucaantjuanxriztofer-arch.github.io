@@ -4,104 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ant Juan Xriztofer C. Buca | Portfolio</title>
+    
+    <!-- Modern Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #0f0a1f;
+            font-family: 'Inter', system-ui, sans-serif;
+            background: #0a0614;
             color: #e0d4ff;
-            line-height: 1.8;
+            line-height: 1.7;
         }
+        
         /* Navigation */
         nav {
             position: fixed;
             top: 0;
             width: 100%;
-            background: rgba(15, 10, 31, 0.97);
-            backdrop-filter: blur(12px);
+            background: rgba(10, 6, 20, 0.95);
+            backdrop-filter: blur(16px);
             z-index: 1000;
-            border-bottom: 1px solid #f97316;
+            border-bottom: 1px solid rgba(249, 115, 22, 0.2);
         }
         .nav-container {
-            max-width: 1100px;
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 20px 30px;
+            padding: 18px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
         .logo {
-            font-size: 1.6em;
-            font-weight: bold;
+            font-size: 1.8em;
+            font-weight: 700;
             color: #f97316;
+            letter-spacing: -1px;
         }
         .nav-links a {
             color: #d1c4e9;
             text-decoration: none;
-            margin-left: 40px;
+            margin-left: 35px;
             font-weight: 500;
-            transition: all 0.3s;
+            transition: all 0.3s ease;
         }
         .nav-links a:hover {
             color: #f97316;
-            transform: translateY(-3px);
+            transform: translateY(-2px);
         }
+
         /* Hero */
         header {
-            background: linear-gradient(135deg, #2e1a47, #4c1d95);
+            background: linear-gradient(135deg, #2e1a47 0%, #1a0f2e 100%);
             text-align: center;
-            padding: 220px 20px 160px;
+            padding: 260px 20px 180px;
             margin-top: 70px;
         }
         h1 {
-            font-size: 3.6em;
-            margin-bottom: 15px;
-            color: #e0d4ff;
+            font-size: 3.8em;
+            font-weight: 700;
+            margin-bottom: 12px;
+            background: linear-gradient(90deg, #f97316, #c084fc);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         .subtitle {
-            font-size: 1.5em;
-            color: #f97316;
+            font-size: 1.35em;
+            color: #c4b5fd;
+            margin-bottom: 8px;
         }
+
         section {
-            padding: 120px 10%;
-            max-width: 1000px;
+            padding: 110px 5%;
+            max-width: 1100px;
             margin: 0 auto;
         }
         h2 {
-            font-size: 2.6em;
-            color: #c4b5fd;
+            font-size: 2.8em;
+            font-weight: 600;
+            color: #e0d4ff;
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             position: relative;
         }
         h2::after {
             content: '';
-            width: 80px;
+            width: 70px;
             height: 4px;
-            background: #f97316;
+            background: linear-gradient(to right, #f97316, #fb923c);
             position: absolute;
-            bottom: -15px;
+            bottom: -18px;
             left: 50%;
             transform: translateX(-50%);
+            border-radius: 2px;
         }
+
+        /* Modern Card */
         .card {
-            background: rgba(46, 26, 71, 0.7);
-            border: 1px solid #f97316;
-            padding: 45px;
-            border-radius: 20px;
-            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+            background: rgba(30, 20, 60, 0.6);
+            border: 1px solid rgba(249, 115, 22, 0.3);
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
             transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
         }
         .card:hover {
-            transform: translateY(-15px);
-            box-shadow: 0 25px 50px rgba(249, 115, 22, 0.3);
+            transform: translateY(-12px);
             border-color: #f97316;
+            box-shadow: 0 30px 60px rgba(249, 115, 22, 0.25);
         }
+
+        /* About Me */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .profile-img {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 20px;
+            border: 4px solid #f97316;
+            box-shadow: 0 15px 35px rgba(249, 115, 22, 0.3);
+        }
+
+        /* Skills & Hobbies */
+        .skill-item, .hobby-item {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+        }
+        .skill-img {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+        }
+        .hobby-img {
+            width: 95px;
+            height: 95px;
+            object-fit: cover;
+            border-radius: 16px;
+        }
+
         footer {
             text-align: center;
-            padding: 70px;
+            padding: 80px 20px;
             background: #0a0614;
             color: #a5a5c0;
+            border-top: 1px solid rgba(249, 115, 22, 0.2);
         }
     </style>
 </head>
@@ -122,84 +175,74 @@
 
     <header id="home">
         <h1>Ant Juan Xriztofer C. Buca</h1>
-        <p class="subtitle">Student of Institute of Computing, Davao Del Norte State College</p>
-        <p class="subtitle">Aspiring Information System Developer</p>
+        <p class="subtitle">BS Information Systems Student</p>
+        <p class="subtitle">Davao del Norte State College</p>
     </header>
 
-   <section id="about">
-    <h2>About Me</h2>
-    <div class="card" style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
-        <img src="BUCA, ANT JUAN DSC_0247.JPG" 
-             alt="Ant Juan Xriztofer C. Buca" 
-             style="width: 220px; height: 220px; object-fit: cover; border-radius: 16px; border: 3px solid #f97316; flex-shrink: 0;">
-        
-        <div style="flex: 1; min-width: 300px;">
-            <p>Welcome to my personal website! I'm excited to share a little bit about myself, my journey, and the work I'm passionate about.</p>
-            <p style="margin-top:25px;">As an Information Systems student at Davao Del Norte State College, I have a strong passion for programming especially in Java. I enjoy solving real-world problems through technology.</p>
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="card about-content">
+            <img src="BUCA, ANT JUAN DSC_0247.JPG" 
+                 alt="Ant Juan Xriztofer C. Buca" 
+                 class="profile-img">
+            <div>
+                <p>Welcome to my personal website! I'm excited to share my journey, skills, and projects as an aspiring Information Systems Developer.</p>
+                <p style="margin-top:25px;">Passionate about building practical solutions using Java, I love turning ideas into functional desktop applications that solve real-world problems.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="skills">
-    <h2>My Skill</h2>
-    <div class="card" style="display: flex; align-items: center; gap: 25px;">
-        <img src="download (2).png" 
-             alt="Java Logo" 
-             style="width: 110px; height: 110px; object-fit: contain; flex-shrink: 0;">
-        <div>
-            <p style="font-size: 1.5em; margin: 0;"><strong>Java</strong></p>
-            <p style="margin-top: 8px;">Object-Oriented Programming, Java Swing GUI, JDBC & MySQL Integration, Desktop Application Development</p>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="card skill-item">
+            <img src="download (2).png" 
+                 alt="Java Logo" 
+                 class="skill-img">
+            <div>
+                <p style="font-size: 1.6em; font-weight: 600; margin-bottom: 8px;">Java</p>
+                <p>Desktop Applications • Java Swing • JDBC/MySQL • OOP • System Development</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <section id="project">
         <h2>Featured Project</h2>
         <div class="card">
-            <h3>Traffic Violation Management System for Carmen</h3>
-            <p>A Java-GUI based system designed to manage traffic violations efficiently for Carmen.</p>
-            <p><strong>Role:</strong> Co - Developer</p>
-            <p><strong>Technology:</strong> Java</p>
-            <p><strong>Year:</strong> 2026</p>
+            <h3>Traffic Violation Management System</h3>
+            <p>A Java GUI-based system for managing traffic violations efficiently.</p>
+            <p><strong>Role:</strong> Co-Developer &nbsp;&nbsp; | &nbsp;&nbsp; <strong>Year:</strong> 2026</p>
         </div>
     </section>
 
     <section id="certificate">
         <h2>My Certificate</h2>
         <div class="card">
-            <h3>ByteFest 3.0 MTV Spoof 1st Runner-up</h3>
+            <h3>ByteFest 3.0 MTV Spoof — 1st Runner-up</h3>
             <p>BYTEFEST 3.0 • 2026</p>
         </div>
     </section>
 
-   <section id="hobbies">
-    <h2>Hobbies</h2>
-    
-    <!-- Gaming -->
-    <div class="card" style="display: flex; align-items: center; gap: 25px;">
-        <img src="images (3).jpg" 
-             alt="Gaming" 
-             style="width: 90px; height: 90px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
-        <div>
-            <h3>🎮 Playing Online Games</h3>
-            <p>Especially <strong>Mobile Legends</strong> — my favorite way to relax and have fun with friends.</p>
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="card hobby-item" style="margin-bottom: 25px;">
+            <img src="images (3).jpg" alt="Gaming" class="hobby-img">
+            <div>
+                <h3>🎮 Playing Online Games</h3>
+                <p>Especially <strong>Mobile Legends</strong> — my favorite way to relax and bond with friends.</p>
+            </div>
         </div>
-    </div>
-
-    <!-- Movies -->
-    <div class="card" style="display: flex; align-items: center; gap: 25px;">
-        <img src="download (4).png" 
-             alt="Movies & Series" 
-             style="width: 90px; height: 90px; object-fit: cover; border-radius: 12px; flex-shrink: 0;">
-        <div>
-            <h3>🎥 Watching Movies & Series</h3>
-            <p>I love watching action, romance, thriller, and other interesting films.</p>
+        
+        <div class="card hobby-item">
+            <img src="download (4).png" alt="Movies" class="hobby-img">
+            <div>
+                <h3>🎥 Watching Movies & Series</h3>
+                <p>I love action, romance, thriller, and other interesting films.</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer>
-        © 2026 Ant Juan Xriztofer C. Buca • Built with ❤️ on GitHub Pages
+        © 2026 Ant Juan Xriztofer C. Buca • Built with ❤️ using GitHub Pages
     </footer>
 </body>
 </html>
